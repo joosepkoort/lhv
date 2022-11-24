@@ -20,11 +20,8 @@ public class FileUtil {
             if (is == null) {
                 throw new IllegalStateException("can't load file: " + pathOnClasspath);
             }
-
             BufferedReader buffer = new BufferedReader(new InputStreamReader(is));
-
             return buffer.lines().collect(Collectors.joining("\n"));
-
         } catch (IOException e) {
             throw new RuntimeException();
         }

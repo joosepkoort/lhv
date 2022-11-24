@@ -14,7 +14,6 @@ public interface MoneyLaunderingInterface {
 
     void update(@PathVariable Long id, @PathVariable String newName);
 
-
     void delete(@PathVariable Long id);
 
 }
